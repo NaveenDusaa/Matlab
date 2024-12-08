@@ -1,36 +1,30 @@
-package NewPac;
-//runtime polymorphism method overriding 
+class Pint
+{
+	int idNum;
+	String Name;
+	int age;
+	pint(int idNum,String Name ,int age) {
 
- class Naga {
-	 
-	void display() {//overriden
-		System.out.println("Naveen1");
-	}
-	void show() {
-		
-		System.out.println("naveen2");
-	}
 
-}
-public class Naveen extends Naga{
-	void display() {//overriding method
-		
-		System.out.println("Hello");
-		
-	}
-	void print() {
 
-		System.out.println("New");
-		
+
+     this .idNum=idNum;
+	 this.Name=Name;
+	 this.age=age;
 	}
-	
-public static void main(String args[]) {
-	Naveen n=new Naveen();
-	
-	
-	n.display();
-	n.display();
-	n.show();
-	n.print();
 }
+	
+class Naveen
+public static void main ( String args[]){
+
+	{
+		Pint p1=new pint (1001,"harish",23);
+		pint p2=new pint (1002,"sai",23);
+		System.out.println(p1.idNum+"\t"+p1.Name+"\t"+p1.age);
+		System.out.println(p2.idNum+"\t"+p2.Name+"\t"+p2.age);
+
+	
+	}
 }
+
+

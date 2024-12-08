@@ -1,37 +1,27 @@
-package NewPac;
-//super & this keywords using instance variable
-class Book{
-	int a=10;
-	void max(int x) {
-		System.out.println(x);
+class A
+{
+	A(){
+		this(50);
+		System.out.println("one");
 	}
-	int t=100;
-	void display() {
-		System.out.println(t);
-	}
-	
-}
-	
-public class Hello extends Book {
-	int a=30;
-	void show() {
-		int a=40;
+	A(int a){
 		System.out.println(a);
-		System.out.println(this.a);
-		System.out.println(super.a);
 	}
-	
-	public static void main(String args[]) {
-		Hello ob=new Hello();
-		ob.show();
-		ob.display();
-	    ob.max(50);
-	    
-		
-	}
-	
-	
-	
 
 }
-	
+class Hello extends A
+{
+	Hello(){
+		this(30);
+		System.out.println("two");
+	}
+	Hello(int b){
+		System.out.println(b);
+}
+public static void main (String args[]){
+	new Hello();
+}
+}
+
+     
+
