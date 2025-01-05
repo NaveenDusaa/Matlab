@@ -1,23 +1,37 @@
-package NewPac;
-//method overlodding in compile time polymorphism;
-public class Men {
-	void add(int a,int b,float c) {
-        System.out.println(a/b+c);
-        
-	}
-	void max(float f,int d) {
-		System.out.println(f-d);
-	}
-	
-	
+package Abstraction;
 
-
-public static void main(String args[]) {
-	Men ob=new Men();
-	ob.add(50,80,60.4f);
-	ob.max(50.3f, 69);
-	
+interface Ab {
+	void show();
+	void display();
+	int num=400;
+	void view();
+	void h();
 	
 }
-	
+  abstract class  B implements Ab {
+	public void show() {
+		System.out.println("one");
+	}
+	public void display() {
+		System.out.println("two");
+	}
+
+}
+public class Men extends B {
+	public void view() {
+		System.out.println("Hi am v");
+	}
+	public void h() {
+		System.out.println("HI am compiler");
+	}
+public static void main(String args[]) {
+	   Ab ob=new Men();
+		ob.show();
+		ob.display();
+		System.out.println(Ab.num);
+		ob.view();
+		ob.h();
+		
+	}
+
 }
